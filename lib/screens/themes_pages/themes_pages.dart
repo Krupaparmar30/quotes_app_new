@@ -197,6 +197,7 @@ class _themePageState extends State<themePage> {
     }
 }
 
+
 Widget box2(String img,String text) {
   return RepaintBoundary(
 

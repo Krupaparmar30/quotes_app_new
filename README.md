@@ -19,3 +19,7 @@ A new Flutter project.
 
 
 </P>
+
+
+https://github.com/Krupaparmar30/quotes_app_new/assets/149374671/dde8ff34-ef8b-4f0b-a5d4-501540b3d17f
+

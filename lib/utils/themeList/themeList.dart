@@ -26,6 +26,20 @@ List textList2 = [
   {"text": "Love"},
 
 ];
+List themeList3 = [
+  {"img": "assets/images/a1.jpg"},
+  {"img": "assets/images/dp1.jpg"},
+  {"img": "assets/images/s1.jpg"},
+  {"img": "assets/images/u1.jpg"},
+
+];
+List textList3 = [
+  {"text": "Alon"},
+  {"text": "Depression"},
+  {"text": "Sad"},
+  {"text": "Upset"},
+
+];
 // List category = [
 //   'Success',
 //   'Love',
@@ -463,6 +477,169 @@ List<Map<String,String>>  love=[
   },
 ];
 List Save3=[Trust,family,dream,love];
+
+List<Map<String,String>> alone=[
+  {
+    "quote":"Be yourself; everyone else is already taken.",
+        "author":" — Oscar Wilde"
+  },
+  {
+    "quote":"Two things are infinite: the universe and human stupidity; and I'm not sure about the universe.",
+    "author":"— Albert Einstein"
+  },
+  {
+    "quote":"In three words I can sum up everything I've learned about life: it goes on.",
+    "author":"— Robert Frost"
+  },
+  {
+    "quote":"To be yourself in a world that is constantly trying to make you something else is the greatest accomplishment.",
+        "author":"— Ralph Waldo Emerson"
+  },
+  {
+    "quote":"The only way to do great work is to love what you do.",
+    "author":" — Steve Jobs"
+  },
+  {
+    "quote":"Do not dwell in the past, do not dream of the future, concentrate the mind on the present moment.",
+        "author":" — Buddha"
+  },
+  {
+    "quote":"The only limit to our realization of tomorrow is our doubts of today.",
+    "author":"— Franklin D. Roosevelt"
+  },
+  {
+    "quote":"Get busy living or get busy dying.",
+        "author":"— Stephen King"
+  },
+  {
+    "quote":"The only impossible journey is the one you never begin.",
+    "author":"— Tony Robbins"
+  }
+
+];
+
+List<Map<String,String>> sad=[
+  {
+    "quote":"Tears come from the heart and not from the brain.",
+    "author":"— Leonardo da Vinci"
+  },
+  {
+    "quote":"Every man has his secret sorrows which the world knows not; and often times we call a man cold when he is only sad.",
+    "author":" — Henry Wadsworth Longfellow"
+  },
+  {
+    "quote":"It's sad when someone you know becomes someone you knew." ,
+    "author":"— Henry Rollins"
+  },
+  {
+    "quote":"Grief is the price we pay for love." ,
+    "author":" — Queen Elizabeth II"
+  },
+  {
+    "quote":"The word ‘happy’ would lose its meaning if it were not balanced by sadness.",
+    "author":" — Steve Jobs"
+  },
+  {
+    "quote":"Every human walks around with a certain kind of sadness. They may not wear it on their sleeves, but it’s there if you look deep." ,
+    "author":" — Buddha"
+  },
+  {
+    "quote":"Heavy hearts, like heavy clouds in the sky, are best relieved by the letting of a little water.",
+    "author":"— Franklin D. Roosevelt"
+  },
+  {
+    "quote":"The saddest thing in the world is loving someone who used to love you." ,
+    "author":"— Stephen King"
+  },
+  {
+    "quote":"Sometimes you don't realize how much you care for someone until they stop caring for you.",
+    "author":" — Anonymous"
+  }
+
+];
+List<Map<String,String>> dep=[
+  {
+    "quote":"To be yourself in a world that is constantly trying to make you something else is the greatest accomplishment.",
+    "author":"— Ralph Waldo Emerson"
+  },
+  {
+    "quote":"The only way to do great work is to love what you do.",
+    "author":" — Steve Jobs"
+  },
+  {
+    "quote":"Do not dwell in the past, do not dream of the future, concentrate the mind on the present moment.",
+    "author":" — Buddha"
+  },
+  {
+    "quote":"The only limit to our realization of tomorrow is our doubts of today.",
+    "author":"— Franklin D. Roosevelt"
+  },
+  {
+    "quote":"Get busy living or get busy dying.",
+    "author":"— Stephen King"
+  },
+  {
+    "quote":"The only impossible journey is the one you never begin.",
+    "author":"— Tony Robbins"
+  },
+  {
+    "quote":"Every human walks around with a certain kind of sadness. They may not wear it on their sleeves, but it’s there if you look deep." ,
+    "author":" — Buddha"
+  },
+  {
+    "quote":"Heavy hearts, like heavy clouds in the sky, are best relieved by the letting of a little water.",
+    "author":"— Franklin D. Roosevelt"
+  },
+  {
+    "quote":"The saddest thing in the world is loving someone who used to love you." ,
+    "author":"— Stephen King"
+  },
+  {
+    "quote":"Sometimes you don't realize how much you care for someone until they stop caring for you.",
+    "author":" — Anonymous"
+  }
+
+];
+List<Map<String,String>> upset=[
+  {
+    "quote":"To be yourself in a world that is constantly trying to make you something else is the greatest accomplishment.",
+    "author":"— Ralph Waldo Emerson"
+  },
+  {
+    "quote":"The only way to do great work is to love what you do.",
+    "author":" — Steve Jobs"
+  },
+  {
+    "quote":"Do not dwell in the past, do not dream of the future, concentrate the mind on the present moment.",
+    "author":" — Buddha"
+  },
+  {
+    "quote":"The only limit to our realization of tomorrow is our doubts of today.",
+    "author":"— Franklin D. Roosevelt"
+  },
+  {
+    "quote":"Get busy living or get busy dying.",
+    "author":"— Stephen King"
+  },
+  {
+    "quote":"The only impossible journey is the one you never begin.",
+    "author":"— Tony Robbins"
+  },
+  {
+    "quote":"Heavy hearts, like heavy clouds in the sky, are best relieved by the letting of a little water.",
+    "author":"— Franklin D. Roosevelt"
+  },
+  {
+    "quote":"The saddest thing in the world is loving someone who used to love you." ,
+    "author":"— Stephen King"
+  },
+  {
+    "quote":"Sometimes you don't realize how much you care for someone until they stop caring for you.",
+    "author":" — Anonymous"
+  }
+];
+
+List Save4=[sad,alone,dep,upset];
 
 List images=[
   {

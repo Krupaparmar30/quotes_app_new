@@ -197,61 +197,85 @@ class _themePageState extends State<themePage> {
                 ),
               ),
             ),
-            // SizedBox(
-            //   height: 10,
-            // ),
-            // Padding(
-            //   padding: const EdgeInsets.only(right: 230),
-            //   child: Text('Hard Times', style: TextStyle(
-            //       color: Colors.white, fontWeight: FontWeight.bold, fontSize: 22
-            //
-            //   ),),
-            // ),
-            //
-            // SingleChildScrollView(
-            //   scrollDirection: Axis.horizontal,
-            //   child: GestureDetector(
-            //     onDoubleTap: () {
-            //
-            //     },
-            //     child: SingleChildScrollView(
-            //       scrollDirection: Axis.vertical,
-            //       child: Column(
-            //         children: [
-            //           Row(
-            //             children: [
-            //               ...List.generate(4, (index) =>
-            //                   Padding(padding: EdgeInsets.all(5),
-            //                       child: GestureDetector(onDoubleTap: () {
-            //                         setState(() {
-            //                           selIndex = index;
-            //                           String S = Save2[selIndex][index]['img'];
-            //                           String P=Save2[selIndex][index]['quote'];
-            //                           String K=Save2[selIndex][index]['author'];
-            //                           Navigator.of(context).pushNamed('/s');
-            //                         });
-            //                       }, child:
-            //                    Column(
-            //                      children: [
-            //                        box2(themeList2[index]['img'],textList2[index]['text'].toString()),
-            //
-            //                      ],
-            //                    )
-            //
-            //
-            //
-            //
-            //
-            //                       ))
-            //               )
-            //
-            //             ],
-            //           ),
-            //         ],
-            //       ),
-            //     ),
-            //   ),
-            // ),
+            SizedBox(
+              height: 10,
+            ),
+            Padding(
+              padding: const EdgeInsets.only(right: 230),
+              child: Text('Hard Times', style: TextStyle(
+                  color: Colors.white, fontWeight: FontWeight.bold, fontSize: 22
+
+              ),),
+            ),
+
+            SingleChildScrollView(
+              scrollDirection: Axis.horizontal,
+              child: GestureDetector(
+                onDoubleTap: () {
+
+                },
+                child: SingleChildScrollView(
+                  scrollDirection: Axis.vertical,
+                  child: Column(
+                    children: [
+                      Row(
+                        children: [
+                          ...List.generate(4, (index) =>
+                              Padding(padding: EdgeInsets.all(5),
+                                  child: GestureDetector(onDoubleTap: () {
+                                    setState(() {
+                                      selIndex = index;
+                                      String D= Save4[selIndex][index]['img'];
+                                      String E=Save4[selIndex][index]['quote'];
+                                      String F=Save4[selIndex][index]['author'];
+                                      //Navigator.of(context).pushNamed('/s');
+                                    });
+                                    Navigator.of(context).pushNamed('/th3');
+
+                                  }, child:
+                                  Container(
+                                    height: 100,
+                                    width: 150,
+                                    decoration: BoxDecoration(
+                                        color: Colors.pink,
+                                        image:  DecorationImage(
+                                            fit: BoxFit.cover,
+                                            image: AssetImage(
+                                                themeList3[index]['img']
+                                            )
+                                        )
+                                    ),
+                                    child: Column(
+                                      children: [
+
+                                        Padding(
+                                          padding: const EdgeInsets.only(top: 65,right: 50),
+                                          child: Text(
+                                            textList3[index]['text'],
+                                            style: TextStyle(
+                                                color: Colors.white,
+                                                fontSize: 22
+                                            ),
+                                          ),
+                                        )
+                                      ],
+                                    ),
+                                  )
+
+
+
+
+
+                                  ))
+                          )
+
+                        ],
+                      ),
+                    ],
+                  ),
+                ),
+              ),
+            ),
 
 
 

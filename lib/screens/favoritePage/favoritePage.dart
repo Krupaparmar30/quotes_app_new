@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:quotes_app_new/screens/themes_pages/themes_pages.dart';
 import 'package:quotes_app_new/utils/icons.dart';
+import 'package:quotes_app_new/utils/themeNew/themwNew.dart';
 
 class favoritePage extends StatefulWidget {
   const favoritePage({super.key});
@@ -14,23 +15,7 @@ class _favoritePageState extends State<favoritePage> {
   Widget build(BuildContext context) {
     return Scaffold(
       body: Column(children: [
-        ...List.generate(fav.length, (index) =>
-        Row(
-          children: [
-            Container(
-              height: 100,
-              width: 100,
-              decoration: BoxDecoration(
-                color: Colors.pink,
-                image: DecorationImage(
-                  image: AssetImage(
-                    fav[index]['img'],
-                  )
-                )
-               ),
-            )
-          ],
-        ))
+      ...List.generate(like.length, (index) => Text('$like[index'))
       ],),
     );
   }

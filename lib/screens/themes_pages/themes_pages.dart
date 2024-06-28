@@ -77,9 +77,42 @@ class _themePageState extends State<themePage> {
                             String S = Save2[selIndex][index]['img'];
                             String P=Save2[selIndex][index]['quote'];
                             String K=Save2[selIndex][index]['author'];
-                            Navigator.of(context).pushNamed('/s');
+                            // Navigator.of(context).pushNamed('/s');
                           });
-                        }, child: box2(themeList[index]['img'],textList[index]['text'].toString())))
+                          Navigator.of(context).pushNamed('/th');
+                        }, child: Column(
+                          children: [
+                            // box2(themeList[index]['img'],textList[index]['text'].toString(),
+                          Container(
+                            height: 100,
+                            width: 150,
+                            decoration: BoxDecoration(
+                              color: Colors.pink,
+                              image:  DecorationImage(
+                                fit: BoxFit.cover,
+                                image: AssetImage(
+                                    themeList[index]['img']
+                                )
+                              )
+                            ),
+                            child: Column(
+                              children: [
+
+                                Padding(
+                                  padding: const EdgeInsets.only(top: 65,right: 50),
+                                  child: Text(
+                                    textList[index]['text'],
+                                    style: TextStyle(
+                                      color: Colors.white,
+                                      fontSize: 22
+                                    ),
+                                  ),
+                                )
+                              ],
+                            ),
+                          )
+                          ],
+                        )))
                 ),
 
         ],
@@ -89,49 +122,81 @@ class _themePageState extends State<themePage> {
       ),
     ),
     ),
-            // SizedBox(
-            //   height: 10,
-            // ),
-            // Padding(
-            //   padding: const EdgeInsets.only(right: 300),
-            //   child: Text('Love', style: TextStyle(
-            //       color: Colors.white, fontWeight: FontWeight.bold, fontSize: 22
-            //
-            //   ),),
-            // ),
+            SizedBox(
+              height: 10,
+            ),
+            Padding(
+              padding: const EdgeInsets.only(right: 300),
+              child: Text('Love', style: TextStyle(
+                  color: Colors.white, fontWeight: FontWeight.bold, fontSize: 22
 
-            // SingleChildScrollView(
-            //   scrollDirection: Axis.horizontal,
-            //   child: GestureDetector(
-            //     onDoubleTap: () {
-            //
-            //     },
-            //     child: SingleChildScrollView(
-            //       scrollDirection: Axis.vertical,
-            //       child: Column(
-            //         children: [
-            //           Row(
-            //             children: [
-            //               ...List.generate(4, (index) =>
-            //                   Padding(padding: EdgeInsets.all(5),
-            //                       child: GestureDetector(onDoubleTap: () {
-            //                         setState(() {
-            //                           selIndex = index;
-            //                           String S = Save3[selIndex][index]['img'];
-            //                           String P=Save3[selIndex][index]['quote'];
-            //                           String K=Save3[selIndex][index]['author'];
-            //                           Navigator.of(context).pushNamed('/s');
-            //                         });
-            //                       }, child: box2(themeList2[index]['img'],textList2[index]['text'].toString())))
-            //               )
-            //
-            //             ],
-            //           ),
-            //         ],
-            //       ),
-            //     ),
-            //   ),
-            // ),
+              ),),
+            ),
+
+            SingleChildScrollView(
+              scrollDirection: Axis.horizontal,
+              child: GestureDetector(
+                onDoubleTap: () {
+
+                },
+                child: SingleChildScrollView(
+                  scrollDirection: Axis.vertical,
+                  child: Column(
+                    children: [
+                      Row(
+                        children: [
+                          ...List.generate(4, (index) =>
+                              Padding(padding: EdgeInsets.all(5),
+                                  child: GestureDetector(onDoubleTap: () {
+                                    setState(() {
+                                      selIndex = index;
+                                      String A = Save3[selIndex][index]['img'];
+                                      String B=Save3[selIndex][index]['quote'];
+                                      String C=Save3[selIndex][index]['author'];
+                                   //   Navigator.of(context).pushNamed('/s');
+                                    });
+                                    Navigator.of(context).pushNamed('/th2');
+                                  }, child:
+                                  Container(
+                                    height: 100,
+                                    width: 150,
+                                    decoration: BoxDecoration(
+                                        color: Colors.pink,
+                                        image:  DecorationImage(
+                                            fit: BoxFit.cover,
+                                            image: AssetImage(
+                                                themeList2[index]['img']
+                                            )
+                                        )
+                                    ),
+                                    child: Column(
+                                      children: [
+
+                                        Padding(
+                                          padding: const EdgeInsets.only(top: 65,right: 50),
+                                          child: Text(
+                                            textList2[index]['text'],
+                                            style: TextStyle(
+                                                color: Colors.white,
+                                                fontSize: 22
+                                            ),
+                                          ),
+                                        )
+                                      ],
+                                    ),
+                                  )
+                                 // box2(themeList2[index]['img'],textList2[index]['text'].toString())
+                                  )
+                              )
+                          )
+
+                        ],
+                      ),
+                    ],
+                  ),
+                ),
+              ),
+            ),
             // SizedBox(
             //   height: 10,
             // ),
@@ -198,38 +263,6 @@ class _themePageState extends State<themePage> {
 }
 
 
-Widget box2(String img,String text) {
-  return RepaintBoundary(
-
-    child: Container(
-      height: 100,
-      width: 150,
-      decoration: BoxDecoration(
-          borderRadius: BorderRadius.circular(20),
-          color: Colors.pink,
-          image: DecorationImage(
-              fit: BoxFit.cover,
-              image: AssetImage(
-                  img
-              )
-          )
-
-      ),
-      child: Padding(
-        padding: const EdgeInsets.only(top: 70,left: 10),
-        child: Column(
-          children: [
-           Text(text,style: TextStyle(
-              fontSize: 18,color: Colors.white,
-            fontWeight: FontWeight.bold
-          ),),
-
-          ]
-        ),
-      ),
-    ),
-  );
-}
 
 int index = 0;
 int selIndex = 0;

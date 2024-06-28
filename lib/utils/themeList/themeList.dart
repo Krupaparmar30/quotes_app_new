@@ -3,14 +3,14 @@ List themeList = [
   {"img": "assets/images/happy.jpg"},
   {"img": "assets/images/m4.jpg"},
   {"img": "assets/images/m2.jpg"},
-  {"img": "assets/images/m3.jpg"},
+
 ];
 List themeList2 = [
   {"img": "assets/images/t1.jpg"},
-  {"img": "assets/images/happy.jpg"},
-  {"img": "assets/images/m4.jpg"},
-  {"img": "assets/images/m2.jpg"},
-  {"img": "assets/images/m3.jpg"},
+  {"img": "assets/images/f1.jpg"},
+  {"img": "assets/images/d1.jpg"},
+  {"img": "assets/images/l2.jpg"},
+
 ];
 List textList = [
   {"text": "Be Strong"},
@@ -21,9 +21,9 @@ List textList = [
 ];
 List textList2 = [
   {"text": "Trust"},
-  {"text": "Positivity"},
-  {"text": "Success"},
-  {"text": "Money"},
+  {"text": "Family"},
+  {"text": "Dream"},
+  {"text": "Love"},
 
 ];
 // List category = [
@@ -235,7 +235,7 @@ List<Map<String,String>> Trust=[
     "quote":"To be trusted is a greater compliment than being loved.",
 
   "author":" – George MacDonald",
-    "img": "assets/images/b6.jpg"
+    "img": "assets/images/b5.jpg"
   },
   {
     "quote":"Trust starts with truth and ends with truth.",
@@ -281,70 +281,228 @@ List<Map<String,String>> Trust=[
     "img": "assets/images/p4.jpg"
   },
 ];
-List Save3=[Trust];
-//
-// List<Map<String,String>> Trust=[
-// {
-// "quote":,
-// "author":
-// "img": "assets/images/b2.jpg"
-// },
-// {
-// "quote":
-//
-// "author":
-// "img": "assets/images/p3.jpg"
-// },
-//
-// {
-// "quote":
-// "author":
-// "img": "assets/images/b6.jpg"
-// },
-// {
-// "quote":
-// "author":
-// "img": "assets/images/b8.jpg"
-// },
-// {
-// "quote":
-//
-//
-// "author":
-// "img": "assets/images/p6.jpg"
-// },
-// {
-// "quote":
-// "author":
-// "img": "assets/images/p4.jpg"
-// },
-//
-// {
-// "quote":
-// "author":
-// "img": "assets/images/p1.jpg"
-// },
-// {
-// "quote":
-//
-// "author":
-// "img": "assets/images/b9.jpg"
-// },
-// {
-// "quote":
-//
-// "author":
-// "img": "assets/images/p1.jpg"
-// },
-// {
-// "quote":
-// "author":
-// "img": "assets/images/p4.jpg"
-// },
-// ];
-//
+List<Map<String,String>>  family=[
+  {
+    "quote":"Family is not an important thing. It's everything.",
+    "author":" – Michael J. Fox",
+    "img":"assets/images/f2.jpg"
 
 
+  },
+  {
+    "quote":"Family is the compass that guides us. They are the inspiration to reach great heights and our comfort when we occasionally falter.",
+    "author":"– Brad Henry",
+    "img":"assets/images/f3.jpg"
+  },
+  {
+    "quote":"Family is where life begins and love never ends.",
+    "author":"Unknown",
+    "img":"assets/images/f4.jpg"
+  },
+  {
+    "quote":"Family means no one gets left behind or forgotten." ,
+    "author":"– David Ogden Stiers",
+    "img":"assets/images/f5.jpg"
+  },
+  {
+    "quote":"In family life, love is the oil that eases friction, the cement that binds closer together, and the music that brings harmony." ,
+    "author":"– Friedrich Nietzsche",
+    "img":"assets/images/f6.jpg"
+  },
+  {
+    "quote":"The most important thing in the world is family and love." ,
+    "author":" – John Wooden",
+    "img":"assets/images/f7.jpg"
+  },
+  {
+    "quote":"Family and friendships are two of the greatest facilitators of happiness.",
+    "author":" - John C. Maxwell",
+    "img":"assets/images/f8.webp"
+  },
+  {
+    "quote":"Other things may change us, but we start and end with the family.",
+    "author":"– Anthony Brandt",
+    "img":"assets/images/f9.jpg"
+  },
+  {
+    "quote":"Family is a unique gift that needs to be appreciated and treasured, even when they're driving you crazy. As much as they make you mad, interrupt you, annoy you, curse at you, try to control you, these are the people who know you the best and who love you",
+    "author":"– Jenna Morasca",
+    "img":"assets/images/f1.jpg"
+  },
+  {
+    "quote":"The love of a family is life's greatest blessing.",
+    "author":"– Unknown",
+    "img":"assets/images/f10.jpg"
+  }
+
+
+];
+List<Map<String,String>>  dream=[
+  {
+  "quote":"The future belongs to those who believe in the beauty of their dreams." ,
+    "author":"– Eleanor Roosevelt",
+    "img":"assets/images/d1.jpg"
+
+  },
+  {
+    "quote":"Hold fast to dreams, for if dreams die, life is a broken-winged bird that cannot fly.",
+    "author":"– Langston Hughes",
+    "img":"assets/images/d2.jpg"
+
+  },
+  {
+    "quote":"All our dreams can come true, if we have the courage to pursue them.",
+    "author":"– Walt Disney",
+    "img":"assets/images/d3.webp"
+
+  },
+  {
+    "quote":"Dream big and dare to fail.",
+    "author":" – Norman Vaughan",
+    "img":"assets/images/d4.jpg"
+
+
+  },
+  {
+    "quote":"You are never too old to set another goal or to dream a new dream." ,
+    "author":" – C.S. Lewis",
+    "img":"assets/images/d5.jpg"
+
+  },
+  {
+    "quote":"Dreams are the touchstones of our character.",
+    "author":"– Henry David Thoreau",
+    "img":"assets/images/d4.jpg"
+
+  },
+  {
+    "quote": "The only limit to our realization of tomorrow is our doubts of today." ,
+    "author":" – Franklin D. Roosevelt",
+    "img":"assets/images/b7.jpg"
+
+  },
+  {
+    "quote":"Dream as if you'll live forever, live as if you'll die today.",
+    "author":" – James Dean",
+    "img":"assets/images/d2.jpg"
+
+  },
+  {
+    "quote":"It does not do to dwell on dreams and forget to live.",
+    "author":"– J.K. Rowling",
+    "img":"assets/images/d4.jpg"
+
+  },
+  {
+    "quote":"Every great dream begins with a dreamer. Always remember, you have within you the strength, the patience, and the passion to reach for the stars to change the world." ,
+    "author":"– Harriet Tubman",
+    "img":"assets/images/d1.jpg"
+
+  }
+];
+List<Map<String,String>>  love=[
+  {
+    "quote":"The best thing to hold onto in life is each other.",
+    "author":" – Audrey Hepburn",
+    "img":"assets/images/l3.jpg"
+
+  },
+  {
+    "quote":"Love is composed of a single soul inhabiting two bodies.",
+        "author":" – Aristotle",
+    "img":"assets/images/l4.jpg"
+
+  },
+  {
+    "quote":"Love is that condition in which the happiness of another person is essential to your own.",
+        "author":" – Robert A. Heinlein",
+    "img":"assets/images/l5.jpg"
+
+  },
+  {
+    "quote":"We are most alive when we're in love.",
+    "author":"– John Updike",
+    "img":"assets/images/l6.jpg"
+
+  },
+  {
+    "quote":"To love and be loved is to feel the sun from both sides.",
+        "author":"– David Viscott",
+    "img":"assets/images/l7.jpg"
+
+  },
+  {
+    "quote":"The greatest thing you'll ever learn is just to love and be loved in return.",
+    "author":"– Eden Ahbez",
+    "img":"assets/images/l3.jpg"
+
+  },
+  {
+    "quote":"Love is not about how much you say 'I love you', but how much you can prove that it's true.",
+        "author":"– Unknown",
+    "img":"assets/images/l9.jpg"
+
+  },
+  {
+    "quote":"Where there is love there is life.",
+    "author":" – Mahatma Gandhi",
+    "img":"assets/images/l4.jpg"
+
+  },
+  {
+    "quote":"In the end, the love you take is equal to the love you make.",
+    "author":"– Paul McCartney",
+    "img":"assets/images/l5.jpg"
+
+  },
+  {
+    "quote":"Love recognizes no barriers. It jumps hurdles, leaps fences, penetrates walls to arrive at its destination full of hope.",
+    "author":"– Maya Angelou",
+    "img":"assets/images/l9.jpg"
+
+  },
+];
+List Save3=[Trust,family,dream,love];
+
+List images=[
+  {
+    "img": "assets/images/i2.jpg"
+  },
+  {
+    "img": "assets/images/i3.jpg"
+  },
+  {
+    "img": "assets/images/i4.jpg"
+  },
+  {
+    "img": "assets/images/i5.jpg"
+  },
+  {
+    "img": "assets/images/i7.jpg"
+  },
+  {
+    "img": "assets/images/l9.jpg"
+  },
+  {
+    "img": "assets/images/p6.jpg"
+  },
+  {
+    "img": "assets/images/i10.jpg"
+  },
+  {
+    "img": "assets/images/l7.jpg"
+  },
+  {
+    "img": "assets/images/b7.jpg"
+  },
+  {
+    "img": "assets/images/b9.jpg"
+  },
+  {
+    "img": "assets/images/i5.jpg"
+  },
+
+];
 
 
 

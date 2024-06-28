@@ -34,7 +34,7 @@ class AppRoutes{
     '/new':(context)=>newPage(),
     '/th':(context)=>thoughtPage(),
     '/th2':(context)=>thoght2Page(),
-    '/th3':(context)=>thoughtPage2(),
+   '/th3':(context)=>thoughtPage2(),
     '/img':(context)=>imgPage()
 
 

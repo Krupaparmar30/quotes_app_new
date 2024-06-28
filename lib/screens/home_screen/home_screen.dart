@@ -103,24 +103,43 @@ class _homePageState extends State<homePage> {
                                   ),
 
                                   IconButton(
+                                      // onPressed: () async {
+                                      //   RenderRepaintBoundary boundary =
+                                      //       bgImage[index]
+                                      //               .currentContext!
+                                      //               .findRenderObject()
+                                      //           as RenderRepaintBoundary;
+                                      //   ui.Image image =
+                                      //       await boundary.toImage();
+                                      //   ByteData? byteData =
+                                      //       await image.toByteData(
+                                      //           format: ui.ImageByteFormat.png);
+                                      //   Uint8List img =
+                                      //       byteData!.buffer.asUint8List();
+                                      //   final path =
+                                      //       getApplicationDocumentsDirectory();
+                                      //   File file = File("${path}/img.png");
+                                      //   file.writeAsBytes(img);
+                                      //   ShareExtend.share(file.path, "image");
+                                      // },
                                       onPressed: () async {
                                         RenderRepaintBoundary boundary =
-                                            bgImage[index]
-                                                    .currentContext!
-                                                    .findRenderObject()
-                                                as RenderRepaintBoundary;
-                                        ui.Image image =
-                                            await boundary.toImage();
-                                        ByteData? byteData =
-                                            await image.toByteData(
-                                                format: ui.ImageByteFormat.png);
-                                        Uint8List img =
-                                            byteData!.buffer.asUint8List();
+                                        bgImage[index].currentContext!
+                                            .findRenderObject()
+                                        as RenderRepaintBoundary;
+
+                                        ui.Image image = await boundary.toImage();
+                                        ByteData? bytedata = await image.toByteData(
+                                            format: ui.ImageByteFormat.png);
+                                        Uint8List img = bytedata!.buffer.asUint8List();
+
                                         final path =
-                                            getApplicationDocumentsDirectory();
-                                        File file = File("${path}/img.png");
+                                        await getApplicationDocumentsDirectory();
+                                        File file = File("${path.path}/img.png");
                                         file.writeAsBytes(img);
                                         ShareExtend.share(file.path, "image");
+
+                                        //
                                       },
                                       icon: Icon(
                                         Icons.share,
@@ -130,21 +149,24 @@ class _homePageState extends State<homePage> {
 
                                   //todo
                                   IconButton(
+
                                       onPressed: () async {
                                         RenderRepaintBoundary boundary =
-                                            bgImage[index]
-                                                    .currentContext!
-                                                    .findRenderObject()
-                                                as RenderRepaintBoundary;
+                                        bgImage[index]
+                                            .currentContext!
+                                            .findRenderObject()
+                                        as RenderRepaintBoundary;
+
                                         ui.Image image =
-                                            await boundary.toImage();
-                                        ByteData? byteData =
-                                            await image.toByteData(
-                                                format: ui.ImageByteFormat.png);
+                                        await boundary.toImage();
+                                        ByteData? bytedata =
+                                        await image.toByteData(
+                                            format:
+                                            ui.ImageByteFormat.png);
                                         Uint8List img =
-                                            byteData!.buffer.asUint8List();
+                                        bytedata!.buffer.asUint8List();
                                         ImageGallerySaver.saveImage(img);
-                                        // Navigator.pop(context);
+                                        Navigator.pop(context);
                                       },
                                       icon: Icon(
                                         Icons.save_alt,

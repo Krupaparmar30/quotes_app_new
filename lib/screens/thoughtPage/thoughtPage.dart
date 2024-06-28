@@ -138,7 +138,8 @@ class _thoughtPageState extends State<thoughtPage> {
                                                 icon: Icon(Icons.save, size: 32,
                                                   color: Colors.white
                                                   ,)),
-                                            IconButton(  onPressed: () async {
+                                            IconButton(
+                                                onPressed: () async {
                                               RenderRepaintBoundary boundary =
                                               posKey[index].currentContext!
                                                   .findRenderObject()

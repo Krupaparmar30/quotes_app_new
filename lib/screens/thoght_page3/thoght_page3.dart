@@ -1,7 +1,7 @@
+
 import 'dart:io';
 import 'dart:ui'as ui;
 
-import 'package:flutter/material.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/rendering.dart';
 import 'package:flutter/services.dart';
@@ -136,6 +136,7 @@ class _thoughtPage2State extends State<thoughtPage2> {
                                                   ImageGallerySaver.saveImage(img);
                                                   Navigator.pop(context);
                                                 },
+
                                                 icon: Icon(Icons.save, size: 32,
                                                   color: Colors.white
                                                   ,)),
@@ -168,25 +169,26 @@ class _thoughtPage2State extends State<thoughtPage2> {
                                                   Icons.wallpaper,
                                                   size: 32, color: Colors.white
                                                   ,)),
-                                            IconButton(  onPressed: () async {
-                                              RenderRepaintBoundary boundary =
-                                              posKey3[index].currentContext!
-                                                  .findRenderObject()
-                                              as RenderRepaintBoundary;
+                                            IconButton(
+                                                onPressed: () async {
+                                                  RenderRepaintBoundary boundary =
+                                                  posKey3[index].currentContext!
+                                                      .findRenderObject()
+                                                  as RenderRepaintBoundary;
 
-                                              ui.Image image = await boundary.toImage();
-                                              ByteData? bytedata = await image.toByteData(
-                                                  format: ui.ImageByteFormat.png);
-                                              Uint8List img = bytedata!.buffer.asUint8List();
+                                                  ui.Image image = await boundary.toImage();
+                                                  ByteData? bytedata = await image.toByteData(
+                                                      format: ui.ImageByteFormat.png);
+                                                  Uint8List img = bytedata!.buffer.asUint8List();
 
-                                              final path =
-                                              await getApplicationDocumentsDirectory();
-                                              File file = File("${path.path}/img.png");
-                                              file.writeAsBytes(img);
-                                              ShareExtend.share(file.path, "image");
+                                                  final path =
+                                                  await getApplicationDocumentsDirectory();
+                                                  File file = File("${path.path}/img.png");
+                                                  file.writeAsBytes(img);
+                                                  ShareExtend.share(file.path, "image");
 
-                                              //
-                                            },
+                                                  //
+                                                },
                                                 icon: Icon(
                                                   Icons.share,
                                                   size: 32, color: Colors.white

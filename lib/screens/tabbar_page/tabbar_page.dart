@@ -15,7 +15,7 @@ class _tabbarPageState extends State<tabbarPage> {
   @override
   Widget build(BuildContext context) {
     return DefaultTabController(
-      length: 4,
+      length: 2,
       child: Scaffold(
         bottomNavigationBar: TabBar(
           isScrollable: true,
@@ -30,6 +30,7 @@ class _tabbarPageState extends State<tabbarPage> {
                 ],
               ),
             ),
+
             Tab(
               child: Row(
                 children: [
@@ -40,35 +41,14 @@ class _tabbarPageState extends State<tabbarPage> {
                 ],
               ),
             ),
-            Tab(
-              child: Row(
-                children: [
-                  Icon(Icons.favorite,color: Colors.black,),
-                  Text('favorite ',style: TextStyle(
-                      color: Colors.black
-                  ),),
-                ],
-              ),
-            ),
-            Tab(
-              child: Row(
-                children: [
-                  Icon(Icons.thermostat_auto,color: Colors.black,),
-                  Text('Themes ',style: TextStyle(
-                      color: Colors.black
-                  ),),
-                ],
-              ),
-            )
+
           ],
         ),
         body: TabBarView(
           children: [
             homePage(),
             themePage(),
-            favoritePage(),
-          newPage()
-            ],
+          ],
         ),
       ),
     );

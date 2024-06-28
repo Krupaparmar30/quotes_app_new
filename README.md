@@ -3,6 +3,7 @@
 A new Flutter project.
 
 <P>
+<img src="https://github.com/Krupaparmar30/quotes_app_new/assets/149374671/eb79b0df-18c4-49de-90bb-25596d80ee54"height=28% width=32%>
 <img src="https://github.com/Krupaparmar30/quotes_app_new/assets/149374671/6e693e44-ee2f-43f2-9023-f1605071067f"height=28% width=32%>
 <img src="https://github.com/Krupaparmar30/quotes_app_new/assets/149374671/9fce516e-257d-4603-bcfb-69a7c6bd4db1"height=28% width=32%>
 <img src="https://github.com/Krupaparmar30/quotes_app_new/assets/149374671/f54ad5ef-a7ec-42bc-9374-bceef93fe991"height=28% width=32%>
